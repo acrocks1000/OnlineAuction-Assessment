@@ -1,0 +1,125 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg header bg-primary navbar-dark py-2 px-4">
+    <a routerLink="home"><i class="fa fa-balance-scale mx-3 text-light" style="font-size: 2vw;" aria-hidden="true"></i></a>
+    <a class="navbar-brand" routerLink="home">Amazing Auction House</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a routerLink="seller" routerLinkActive="active" class="nav-link">Sellers</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="customer" routerLinkActive="active" class="nav-link">Customers</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="product" routerLinkActive="active" class="nav-link">Products</a>
+        </li>
+        <!-- <li class="nav-item">
+        <a routerLink="insert-seller" routerLinkActive="active" class="nav-link">Register Seller</a>
+      </li> -->
+      </ul>
+
+    </div>
+    
+  </nav>
+
+  <div class="container" style="min-height: 68vh;">
+    <router-outlet></router-outlet>
+  </div>
+
+  <footer class="text-center text-white bg-primary">
+    <!-- Grid container -->
+    <div class="container p-4">
+
+
+
+
+      <!-- Section: Links -->
+      <section class="">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-3 mb-md-0 " style="text-align: left;">
+            <h5 class="text-uppercase" style="text-decoration: underline;">Useful Links</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a routerLink=" " class="text-white ml-0 text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a routerLink="seller" class="text-white text-decoration-none">Sellers</a>
+              </li>
+              <li>
+                <a routerLink="product" class="text-white text-decoration-none">Products</a>
+              </li>
+              <li>
+                <a routerLink="customer" class="text-white text-decoration-none">Customers</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase" style="text-decoration: underline;">Contact</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                Amazing Auction House
+              </li>
+              <li>
+                Street #321/312
+              </li>
+              <li>
+                wealthy society,some Country
+              </li>
+              <li>
+                Contact no: 9876543210
+              </li>
+            </ul>
+          </div>
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+            <h4 class="d-inline-block text-light text-uppercase border-bottom border-5 border-secondary mb-2">Newsletter
+            </h4>
+            <form action="#" method="post">
+              <div class="input-group">
+                <input type="text" class="form-control p-2 border-0" name="subemail" placeholder="Your Email Address">
+                <button class="btn btn-warning" onclick="" name="subscribe" value="">Sign
+                  Up</button>
+              </div>
+            </form>
+            <h6 class="text-light text-uppercase mt-4 mb-3">Follow Us</h6>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-light rounded-circle me-2" href="#"><i
+                  class="fab fa-twitter"></i></a>
+              <a class="btn btn-light rounded-circle me-2" href="#"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-light rounded-circle me-2" href="#"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <a class="btn btn-light rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2022 Copyright:
+      <a class="text-white" routerLink=" ">AAH</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+</body>

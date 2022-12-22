@@ -1,0 +1,37 @@
+<app-register-buttons></app-register-buttons>
+<h3 style="margin-bottom:25px; margin-top:15px">View Product Details</h3>
+<div>
+    <div>
+        <label><b>Seller ID :  </b></label>   {{seller.sellerID}}
+    </div>
+    <div>
+        <label><b>Seller Name :  </b></label>   {{seller.sellerName}}
+    </div>
+    <div>
+        <label><b>Product ID :  </b></label>   {{seller.productID}}
+    </div>
+    <div>
+        <label><b>Product Name :  </b></label>   {{seller.productName}}
+    </div>
+    <div>
+        <label><b>Product Description :  </b></label>   {{seller.productDescription}}
+    </div>
+    <div>
+        <label><b>Product Start Amount :  </b></label>   {{seller.productStartamt}}
+    </div>
+    <div>
+        <label><b>Product Price :  </b></label>   {{seller.productPrice}}
+    </div>
+    <div>
+        <label><b>Product Bidding Date :  </b></label>   {{seller.productBiddingdate}}
+    </div>
+    <div>
+        <label><b>Product Category :  </b></label>   {{seller.productCategory}}
+    </div>
+    <div>
+        <button class="btn btn-warning p-4 col-3" (click)="placeBid()"  style="margin-top:15px">Place Bid</button>
+    </div>
+    <div>
+    <button type="submit" class="btn btn-info p-4 col-3 mb-5" routerLink="/product" style="margin-top:15px">Back to product list</button>
+</div>
+</div>
